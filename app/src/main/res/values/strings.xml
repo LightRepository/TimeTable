@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="teacher_name">Жуйков К. Ф.</string>
+    <string name="date_time">3 сентября</string>
+    <string name="day_week">понедельник</string>
+    <string name="time_first_lesson">8:30 - 10:00</string>
+    <string name="first_lesson">1 пара</string>
+    <string name="lesson_name">Разработка кода ИС</string>
+    <string name="group_name">И-20-3</string>
+    <string name="number_cabinet"></string>
+
+</resources>

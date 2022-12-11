@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/teacher_name"
+            android:textColor="@color/grey_nc"
+            android:textSize="20sp"
+            android:gravity="center">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/header_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@drawable/rectangle_grey"
+            android:layout_alignParentBottom="true"
+            ></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_bold"
+            android:text="3 сентября"></TextView>
+
+        <TextView
+            android:id="@+id/day_of_the_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/purple_700"
+            android:fontFamily="@font/roboto_medium"
+
+            android:layout_toRightOf="@+id/date"
+            android:layout_alignBottom="@+id/date"
+            ></TextView>
+
+    </RelativeLayout>
+</RelativeLayout>

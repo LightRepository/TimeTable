@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/gradient_line"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/gradient_inactive"
+            android:layout_marginBottom="10dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/lesson_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="28sp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/gradient_line">
+        </TextView>
+
+        <TextView
+            android:id="@+id/lesson_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/grey_nc"
+            android:layout_toRightOf="@+id/lesson_time"
+            android:layout_alignBottom="@+id/lesson_time">
+        </TextView>
+
+        <TextView
+            android:id="@+id/lesson_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textSize="28sp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/gradient_line"
+            android:layout_below="@id/lesson_time">
+        </TextView>
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/grey_nc"
+            android:layout_toRightOf="@+id/gradient_line"
+            android:layout_below="@id/lesson_name">
+        </TextView>
+
+        <TextView
+            android:id="@+id/cabinet_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/grey_nc"
+            android:layout_toRightOf="@+id/gradient_line"
+            android:layout_below="@id/group_name">
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@color/grey_nc"
+            android:layout_below="@id/gradient_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            ></ImageView>
+
+    </RelativeLayout>
+</RelativeLayout>
